@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./script.js"></script>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        section{
-            width: 20%;
-            height: 50%;
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <section>
-        <label id="nome" >nome</label>
-        <input id="name">
-
-        <label id="peso" >peso</label>
-        <input id="peso">
-
-        <label id="altura">altura</label>
-        <input id="altura">
+        <header>
+          <h1>Calculadora IMC</h1>
+        </header>
+        <main>
+            <div class="sexo">
+                <input type ="radio" name ="sexo" id ="masc">
+                <label>Masculino</label>
+            </div>
+            <div class="sexo2" >
+                <input type ="radio" name ="sexo" id = "fem">
+                <label>Feminino</label>
+            </div>
+            <div class="question">
+                <label >Peso</label>
+                <input id="peso" type="number">
+            </div>
+            <div class="question">
+                <label >Altura</label>
+                <input id="altura" type="number">
+            </div>
+        </main>
+        <button onclick="add()" >Enviar</button>
     </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>

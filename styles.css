@@ -1,0 +1,74 @@
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background-color: whitesmoke;
+        }
+        
+        section{
+            align-items: center;
+            margin-top: 100px;
+            width: 30%;
+            max-width: 250px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px gray;
+        }
+        header{
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        main{
+            margin-top: 10px;
+            height: 60%;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+        }
+        .question{
+            display: flex;
+            flex-direction: column;
+        }
+        .sexo{
+            display: flex;
+            
+        }
+        .sexo2{
+            display: flex;
+        }
+        input{
+            width: 100%;
+            outline: none;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        button{
+            margin-top: 25px;
+            border: none;
+            background: none;
+            color: white;
+            width: 50%;
+            height: 25px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.5s;
+            background-color: rgb(0, 0, 255, 0.8);
+        }
+        button:hover{
+            background-color: rgb(4, 4, 253, 0.1);
+            color: blue;
+            border: 1px solid blue;
+        }
